@@ -129,25 +129,29 @@ Horaires
 
 <?php
 
-$sql=
-"SELECT *
-FROM opening_hours";
+$hours=[];
+
+try{
 
 $query=
 $pdo->query(
-$sql
+"SELECT * FROM horaires"
 );
 
 $hours=
 $query->fetchAll();
 
-foreach(
-$hours
-as
-$hour
-){
+}catch(Exception $e){
+
+$hours=[];
+
+}
 
 ?>
+
+<?php if(!empty($hours)){ ?>
+
+<?php foreach($hours as $hour){ ?>
 
 <p>
 
@@ -156,6 +160,16 @@ $hour
 :
 
 <?= $hour['hours']; ?>
+
+</p>
+
+<?php } ?>
+
+<?php } else { ?>
+
+<p>
+
+Horaires indisponibles
 
 </p>
 
