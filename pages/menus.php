@@ -1,7 +1,11 @@
 <?php
-echo "DEBUT<br>";
-echo __FILE__ . "<br>";
-echo file_exists('../config/database.php') ? "database.php TROUVE" : "database.php INTROUVABLE";
+include '../config/database.php';
+
+if ($pdo === null) {
+    die("PDO NULL - Erreur de connexion BDD");
+}
+
+echo "PDO OK";
 exit;
 
 ini_set('display_errors',1);
