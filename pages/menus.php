@@ -8,6 +8,10 @@ $query = $pdo->query($sql);
 
 $menus = $query->fetchAll();
 
+echo "<pre>";
+print_r($menus);
+echo "</pre>";
+
 ?>
 
 <?php include '../includes/header.php'; ?>
