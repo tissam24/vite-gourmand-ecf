@@ -1,46 +1,18 @@
 <?php
+$host     = $_ENV['PGHOST']     ?? getenv('PGHOST')     ?? 'localhost';
+$port     = $_ENV['PGPORT']     ?? getenv('PGPORT')     ?? '5432';
+$dbname   = $_ENV['PGDATABASE'] ?? getenv('PGDATABASE') ?? 'railway';
+$user     = $_ENV['PGUSER']     ?? getenv('PGUSER')     ?? 'postgres';
+$password = $_ENV['PGPASSWORD'] ?? getenv('PGPASSWORD') ?? '';
 
-$host =
-$_ENV['DB_HOST']
-?? getenv('DB_HOST')
-?? 'localhost';
+try {
+    $pdo = new PDO(
+        "pgsql:host=$host;port=$port;dbname=$dbname",
+        $user,
+        $password
+    );
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$port =
-$_ENV['DB_PORT']
-?? getenv('DB_PORT')
-?? '5432';
-
-$dbname =
-$_ENV['DB_NAME']
-?? getenv('DB_NAME')
-?? 'vite_gourmand';
-
-$user =
-$_ENV['DB_USER']
-?? getenv('DB_USER')
-?? 'tissam';
-
-$password =
-$_ENV['DB_PASSWORD']
-?? getenv('DB_PASSWORD')
-?? 'password';
-
-try{
-
-$pdo=
-new PDO(
-"pgsql:host=$host;port=$port;dbname=$dbname",
-$user,
-$password
-);
-
-$pdo->setAttribute(
-PDO::ATTR_ERRMODE,
-PDO::ERRMODE_EXCEPTION
-);
-
-}catch(PDOException $e){
-
-$pdo = null;
-
+} catch (PDOException $e) {
+    die("Erreur BDD : " . $e->getMessage());
 }

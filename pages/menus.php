@@ -1,6 +1,8 @@
 <?php
-
-include '../config/database.php';
+echo "DEBUT<br>";
+echo __FILE__ . "<br>";
+echo file_exists('../config/database.php') ? "database.php TROUVE" : "database.php INTROUVABLE";
+exit;
 
 ini_set('display_errors',1);
 error_reporting(E_ALL);
