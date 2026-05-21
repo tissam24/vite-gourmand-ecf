@@ -3,6 +3,7 @@
     
         "phpmailer/phpmailer": "^7.1",
         "mongodb/mongodb": "^2.3",
-        "ext-mongodb": "*"
+        "ext-mongodb": "*",
+        "ext-pdo_pgsql": "*"
     }
 }
