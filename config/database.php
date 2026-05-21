@@ -1,19 +1,29 @@
 <?php
 
 $host =
-getenv('DB_HOST') ?: 'localhost';
+$_ENV['DB_HOST']
+?? getenv('DB_HOST')
+?? 'localhost';
 
 $port =
-getenv('DB_PORT') ?: '5432';
+$_ENV['DB_PORT']
+?? getenv('DB_PORT')
+?? '5432';
 
 $dbname =
-getenv('DB_NAME') ?: 'vite_gourmand';
+$_ENV['DB_NAME']
+?? getenv('DB_NAME')
+?? 'railway';
 
 $user =
-getenv('DB_USER') ?: 'tissam';
+$_ENV['DB_USER']
+?? getenv('DB_USER')
+?? 'postgres';
 
 $password =
-getenv('DB_PASSWORD') ?: 'password';
+$_ENV['DB_PASSWORD']
+?? getenv('DB_PASSWORD')
+?? '';
 
 try{
 
@@ -29,10 +39,11 @@ PDO::ATTR_ERRMODE,
 PDO::ERRMODE_EXCEPTION
 );
 
-}
+}catch(PDOException $e){
 
-catch(PDOException $e){
-
-$pdo=null;
+die(
+"ERREUR DB : ".
+$e->getMessage()
+);
 
 }
