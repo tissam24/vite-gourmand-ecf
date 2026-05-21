@@ -1,15 +1,24 @@
 <?php
 
-if (!extension_loaded('mongodb')) {
-return;
-}
+require_once __DIR__.'/../vendor/autoload.php';
 
-require_once __DIR__ . '/../vendor/autoload.php';
+try{
 
-$client = new MongoDB\Client(
-    "mongodb+srv://admin:Tissam.2410@cluster0.1e8h3n4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+$client =
+new MongoDB\Client(
+"mongodb+srv://..."
 );
 
-$mongoDatabase = $client->vite_gourmand_reviews;
+$mongoDatabase =
+$client->vite_gourmand_reviews;
 
-$reviewsCollection = $mongoDatabase->reviews;
+$reviewsCollection =
+$mongoDatabase->reviews;
+
+}
+
+catch(Exception $e){
+
+$reviewsCollection = null;
+
+}

@@ -6,9 +6,18 @@ include 'includes/header.php';
 
 include 'config/mongodb.php';
 
-$reviews = $reviewsCollection->find([
-    'status' => 'validated'
+$reviews=[];
+
+if(
+$reviewsCollection
+){
+
+$reviews=
+$reviewsCollection->find([
+'status'=>'validated'
 ]);
+
+}
 ?>
 
 
