@@ -1,12 +1,18 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+$reviewsCollection = null;
+
+if(
+class_exists('MongoDB\Client')
+){
 
 try{
 
+require_once __DIR__.'/../vendor/autoload.php';
+
 $client =
 new MongoDB\Client(
-"mongodb+srv://..."
+getenv('MONGO_URI')
 );
 
 $mongoDatabase =
@@ -19,6 +25,8 @@ $mongoDatabase->reviews;
 
 catch(Exception $e){
 
-$reviewsCollection = null;
+$reviewsCollection=null;
+
+}
 
 }
