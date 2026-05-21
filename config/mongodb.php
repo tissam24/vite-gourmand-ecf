@@ -1,5 +1,9 @@
 <?php
 
+if (!extension_loaded('mongodb')) {
+return;
+}
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $client = new MongoDB\Client(
