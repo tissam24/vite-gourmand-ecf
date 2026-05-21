@@ -2,6 +2,24 @@
 
 include 'config/database.php';
 
+if($pdo===null){
+
+echo "
+<h1>Vite & Gourmand</h1>
+<p>Application déployée avec succès.</p>
+<p>Certaines fonctionnalités nécessitent une base de données active.</p>
+";
+
+exit;
+
+}
+
+?>
+
+<?php
+
+include 'config/database.php';
+
 include 'includes/header.php';
 
 include 'config/mongodb.php';
