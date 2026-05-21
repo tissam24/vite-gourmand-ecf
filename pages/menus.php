@@ -2,6 +2,23 @@
 
 include '../config/database.php';
 
+ini_set('display_errors',1);
+error_reporting(E_ALL);
+
+echo "PAGE MENUS OK<br>";
+
+$sql="SELECT * FROM menus";
+
+$query=$pdo->query($sql);
+
+echo "REQUETE OK<br>";
+
+$menus=$query->fetchAll();
+
+echo "MENUS : ".count($menus);
+
+exit;
+
 $sql = "SELECT * FROM menus ORDER BY id DESC";
 
 $query = $pdo->query($sql);
