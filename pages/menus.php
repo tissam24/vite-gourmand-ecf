@@ -5,7 +5,6 @@ include '../config/database.php';
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
-echo "PAGE MENUS OK<br>";
 
 $sql="SELECT * FROM menus";
 

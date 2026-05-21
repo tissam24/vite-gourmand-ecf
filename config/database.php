@@ -13,17 +13,17 @@ $_ENV['DB_PORT']
 $dbname =
 $_ENV['DB_NAME']
 ?? getenv('DB_NAME')
-?? 'railway';
+?? 'vite_gourmand';
 
 $user =
 $_ENV['DB_USER']
 ?? getenv('DB_USER')
-?? 'postgres';
+?? 'tissam';
 
 $password =
 $_ENV['DB_PASSWORD']
 ?? getenv('DB_PASSWORD')
-?? '';
+?? 'password';
 
 try{
 
@@ -41,9 +41,6 @@ PDO::ERRMODE_EXCEPTION
 
 }catch(PDOException $e){
 
-die(
-"ERREUR DB : ".
-$e->getMessage()
-);
+$pdo = null;
 
 }
