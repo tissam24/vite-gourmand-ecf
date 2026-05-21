@@ -126,7 +126,7 @@ required
 
 <div class="alert alert-warning">
 
-⚠️ Le client doit avoir été contacté avant validation.
+<i class="bi bi-exclamation-triangle-fill"></i> Le client doit avoir été contacté avant validation.
 
 </div>
 

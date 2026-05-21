@@ -50,28 +50,28 @@ class="img-fluid rounded shadow"
 
 <p>
 
-🍽️ Thème :
+<i class="bi bi-egg-fried"></i> Thème :
 <?= $menu['theme']; ?>
 
 </p>
 
 <p>
 
-🥗 Régime :
+<i class="bi bi-heart-pulse"></i> Régime :
 <?= $menu['regime']; ?>
 
 </p>
 
 <p>
 
-👥 Minimum :
+<i class="bi bi-people-fill"></i> Minimum :
 <?= $menu['min_people']; ?> personnes
 
 </p>
 
 <p>
 
-💶 Prix :
+<i class="bi bi-currency-euro"></i> Prix :
 <?= $menu['price']; ?> €
 
 </p>
@@ -88,22 +88,22 @@ Composition du menu
 <ul>
 
 <li>
-🥗 Entrée : Bruschetta
+<i class="bi bi-egg"></i> Entrée : Bruschetta
 </li>
 
 <li>
-🍝 Plat : Lasagnes maison
+<i class="bi bi-egg-fried"></i> Plat : Lasagnes maison
 </li>
 
 <li>
-🍰 Dessert : Tiramisu
+<i class="bi bi-cake"></i> Dessert : Tiramisu
 </li>
 
 </ul>
 
 <p>
 
-⚠️ Allergènes :
+<i class="bi bi-exclamation-triangle-fill"></i> Allergènes :
 Gluten • Lait • Œufs
 
 </p>
@@ -115,22 +115,22 @@ Gluten • Lait • Œufs
 <ul>
 
 <li>
-🥗 Entrée : Nachos
+<i class="bi bi-egg"></i> Entrée : Nachos
 </li>
 
 <li>
-🌮 Plat : Tacos au choix
+<i class="bi bi-egg-fried"></i> Plat : Tacos au choix
 </li>
 
 <li>
-🍮 Dessert : Churros
+<i class="bi bi-cake"></i> Dessert : Churros
 </li>
 
 </ul>
 
 <p>
 
-⚠️ Allergènes :
+<i class="bi bi-exclamation-triangle-fill"></i> Allergènes :
 Gluten • Produits laitiers
 
 </p>
@@ -142,22 +142,22 @@ Gluten • Produits laitiers
 <ul>
 
 <li>
-🥗 Entrée : Salade orientale
+<i class="bi bi-egg"></i> Entrée : Salade orientale
 </li>
 
 <li>
-🍗 Plat : Couscous royal
+<i class="bi bi-egg-fried"></i> Plat : Couscous royal
 </li>
 
 <li>
-🍯 Dessert : Pâtisseries orientales
+<i class="bi bi-cake"></i> Dessert : Pâtisseries orientales
 </li>
 
 </ul>
 
 <p>
 
-⚠️ Allergènes :
+<i class="bi bi-exclamation-triangle-fill"></i> Allergènes :
 Gluten • Fruits à coque
 
 </p>
@@ -169,22 +169,22 @@ Gluten • Fruits à coque
 <ul>
 
 <li>
-🥗 Entrée : Salade wakame
+<i class="bi bi-egg"></i> Entrée : Salade wakame
 </li>
 
 <li>
-🍣 Plat : Assortiment sushi
+<i class="bi bi-egg-fried"></i> Plat : Assortiment sushi
 </li>
 
 <li>
-🍡 Dessert : Mochi
+<i class="bi bi-cake"></i> Dessert : Mochi
 </li>
 
 </ul>
 
 <p>
 
-⚠️ Allergènes :
+<i class="bi bi-exclamation-triangle-fill"></i> Allergènes :
 Poisson • Soja • Gluten
 
 </p>
@@ -196,15 +196,15 @@ Poisson • Soja • Gluten
 <ul>
 
 <li>
-🥗 Entrée : Buffet découverte
+<i class="bi bi-egg"></i> Entrée : Buffet découverte
 </li>
 
 <li>
-🍽️ Plat : Menu signature adapté à l'événement
+<i class="bi bi-egg-fried"></i> Plat : Menu signature adapté à l'événement
 </li>
 
 <li>
-🍰 Dessert : Dessert personnalisé selon le thème
+<i class="bi bi-cake"></i> Dessert : Dessert personnalisé selon le thème
 (anniversaire, Noël, ou événement privé type mariage)
 </li>
 
@@ -212,7 +212,7 @@ Poisson • Soja • Gluten
 
 <p>
 
-⚠️ Allergènes :
+<i class="bi bi-exclamation-triangle-fill"></i> Allergènes :
 Variables selon les plats sélectionnés
 
 </p>
@@ -222,7 +222,7 @@ Variables selon les plats sélectionnés
 
 <h4>
 
-‼️Conditions
+<i class="bi bi-exclamation-octagon-fill"></i> Conditions
 
 </h4>
 

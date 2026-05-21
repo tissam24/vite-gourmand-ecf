@@ -38,7 +38,7 @@ Suivi commande
 
 <p>
 
-✅ Commande créée
+<i class="bi bi-check-circle-fill"></i> Commande créée
 
 </p>
 
@@ -70,7 +70,7 @@ $order['status']=="completed"
 
 <p>
 
-✅ Acceptée
+<i class="bi bi-check-circle-fill"></i> Acceptée
 
 </p>
 
@@ -100,7 +100,7 @@ $order['status']=="completed"
 
 <p>
 
-🍳 Préparation
+<i class="bi bi-egg-fried"></i> Préparation
 
 </p>
 
@@ -120,7 +120,7 @@ $order['status']=="completed"
 
 <p>
 
-🚚 Livraison
+<i class="bi bi-truck"></i> Livraison
 
 </p>
 
@@ -136,7 +136,7 @@ $order['status']=="completed"
 
 <p>
 
-🎉 Terminée
+<i class="bi bi-flag-fill"></i> Terminée
 
 </p>
 

@@ -2,31 +2,28 @@
 
 $reviewsCollection = null;
 
-if(
-class_exists('MongoDB\Client')
-){
-
-try{
-
-require_once __DIR__.'/../vendor/autoload.php';
-
-$client =
-new MongoDB\Client(
-getenv('MONGO_URI')
-);
-
-$mongoDatabase =
-$client->vite_gourmand_reviews;
-
-$reviewsCollection =
-$mongoDatabase->reviews;
-
+if (is_file(__DIR__ . '/secrets.local.php')) {
+    require __DIR__ . '/secrets.local.php';
 }
 
-catch(Exception $e){
+require_once __DIR__ . '/../vendor/autoload.php';
 
-$reviewsCollection=null;
+if (class_exists('MongoDB\Client')) {
 
-}
+    try {
+
+        $client = new MongoDB\Client(
+            getenv('MONGO_URI') ?: 'mongodb://localhost:27017'
+        );
+
+        $mongoDatabase = $client->vite_gourmand_reviews;
+
+        $reviewsCollection = $mongoDatabase->reviews;
+
+    } catch (Exception $e) {
+
+        $reviewsCollection = null;
+
+    }
 
 }

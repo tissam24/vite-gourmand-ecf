@@ -1,9 +1,9 @@
 <?php
-$host     = $_ENV['PGHOST']     ?? getenv('PGHOST')     ?? 'localhost';
-$port     = $_ENV['PGPORT']     ?? getenv('PGPORT')     ?? '5432';
-$dbname   = $_ENV['PGDATABASE'] ?? getenv('PGDATABASE') ?? 'railway';
-$user     = $_ENV['PGUSER']     ?? getenv('PGUSER')     ?? 'postgres';
-$password = $_ENV['PGPASSWORD'] ?? getenv('PGPASSWORD') ?? '';
+$host     = getenv('PGHOST')     ?: 'localhost';
+$port     = getenv('PGPORT')     ?: '5432';
+$dbname   = getenv('PGDATABASE') ?: 'vite_gourmand';
+$user     = getenv('PGUSER')     ?: 'tissam';
+$password = getenv('PGPASSWORD') ?: '';
 
 try {
     $pdo = new PDO(

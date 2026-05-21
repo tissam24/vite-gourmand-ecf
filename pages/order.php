@@ -248,7 +248,7 @@ $total,
 $mailBody = "
 
 <h2>
-Commande confirmée ✅
+Commande confirmée
 </h2>
 
 <p>
@@ -339,7 +339,7 @@ $success=true;
 
 <div class="alert alert-success">
 
-Commande enregistrée 🎉
+<i class="bi bi-check-circle-fill"></i> Commande enregistrée
 
 </div>
 

@@ -92,13 +92,13 @@ Contact
 
 <p>
 
-📧 contact@vitegourmand.fr
+<i class="bi bi-envelope-fill"></i> contact@vitegourmand.fr
 
 </p>
 
 <p>
 
-📞 01 23 45 67 89
+<i class="bi bi-telephone-fill"></i> 01 23 45 67 89
 
 </p>
 

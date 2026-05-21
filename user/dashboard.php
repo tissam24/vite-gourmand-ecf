@@ -200,6 +200,17 @@ Modifier
 
 </a>
 
+<br>
+
+<a
+href="../pages/order-tracking.php?id=<?= $order['id']; ?>"
+class="btn btn-info btn-sm mb-1"
+>
+
+Suivi
+
+</a>
+
 <?php if(
 $order['status']
 ==
@@ -213,7 +224,7 @@ href="../pages/add_review.php?order_id=<?= $order['id']; ?>"
 class="btn btn-warning btn-sm"
 >
 
-⭐ Donner un avis
+<i class="bi bi-star-fill"></i> Donner un avis
 
 </a>
 

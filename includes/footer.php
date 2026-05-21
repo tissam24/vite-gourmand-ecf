@@ -108,15 +108,15 @@ Contact
 </h4>
 
 <p>
-📧 contact@vitegourmand.fr
+<i class="bi bi-envelope-fill"></i> contact@vitegourmand.fr
 </p>
 
 <p>
-📞 01 23 45 67 89
+<i class="bi bi-telephone-fill"></i> 01 23 45 67 89
 </p>
 
 <p>
-📍 Bordeaux, France
+<i class="bi bi-geo-alt-fill"></i> Bordeaux, France
 </p>
 
 <hr>
@@ -155,7 +155,7 @@ $hours=[];
 
 <p>
 
-<?= $hour['day']; ?>
+<?= $hour['day_name']; ?>
 
 
 :

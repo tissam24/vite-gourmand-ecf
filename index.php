@@ -103,7 +103,7 @@ $reviewsCollection->find([
                 <div class="card-body">
 
                     <h3 class="mb-3">
-                        🍽️ Menus Premium
+                        <i class="bi bi-egg-fried"></i> Menus Premium
                     </h3>
 
                     <p>
@@ -125,7 +125,7 @@ $reviewsCollection->find([
                 <div class="card-body">
 
                     <h3 class="mb-3">
-                        🚚 Livraison Rapide
+                        <i class="bi bi-truck"></i> Livraison Rapide
                     </h3>
 
                     <p>
@@ -147,7 +147,7 @@ $reviewsCollection->find([
                 <div class="card-body">
 
                     <h3 class="mb-3">
-                        ⭐ Service Professionnel
+                        <i class="bi bi-star-fill"></i> Service Professionnel
                     </h3>
 
                     <p>
@@ -248,7 +248,7 @@ Aujourd’hui, grâce à cette application web, chacun peut découvrir les menus
 
 <h4>
 
-👩 Julie
+<i class="bi bi-person-circle"></i> Julie
 
 </h4>
 
@@ -262,7 +262,7 @@ Co-gérante, elle imagine les menus et veille à offrir une expérience convivia
 
 <h4>
 
-👨 José
+<i class="bi bi-person-circle"></i> José
 
 </h4>
 
@@ -316,7 +316,7 @@ Co-gérant, il supervise l’organisation et garantit un service professionnel p
 
                         <p>
 
-                            ⭐ <?= $review['rating']; ?>/5
+                            <i class="bi bi-star-fill text-warning"></i> <?= $review['rating']; ?>/5
 
                         </p>
 

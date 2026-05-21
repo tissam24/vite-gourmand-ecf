@@ -137,7 +137,7 @@ Gestion des avis
 
 <p>
 
-⭐
+<i class="bi bi-star-fill text-warning"></i>
 
 <?= $review['rating']; ?>
 

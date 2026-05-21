@@ -163,7 +163,7 @@ $mail->Subject =
 
 $mail->Body = "
 
-<h2>Bonjour $firstname 👋</h2>
+<h2>Bonjour $firstname</h2>
 
 <p>Votre compte a été créé avec succès.</p>
 

@@ -31,7 +31,7 @@ Gérer les avis
 
 <h3>
 
-📋 Gestion des commandes
+<i class="bi bi-card-checklist"></i> Gestion des commandes
 
 </h3>
 
@@ -60,7 +60,7 @@ Voir commandes
 
 <h3>
 
-🍽️ Gestion des menus
+<i class="bi bi-egg-fried"></i> Gestion des menus
 
 </h3>
 
@@ -89,7 +89,7 @@ Accéder aux menus
 
 <h3>
 
-⭐ Gestion des avis
+<i class="bi bi-star-fill"></i> Gestion des avis
 
 </h3>
 
@@ -118,7 +118,7 @@ Voir avis
 
 <h3>
 
-🕒 Modifier horaires
+<i class="bi bi-clock"></i> Modifier horaires
 
 </h3>
 

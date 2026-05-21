@@ -1,43 +1,11 @@
 <?php
 include '../config/database.php';
 
-if ($pdo === null) {
-    die("PDO NULL - Erreur de connexion BDD");
-}
-
-echo "PDO OK";
-exit;
-
-ini_set('display_errors',1);
-error_reporting(E_ALL);
-
-
-$sql="SELECT * FROM menus";
-
-$query=$pdo->query($sql);
-
-echo "REQUETE OK<br>";
-
-$menus=$query->fetchAll();
-
-echo "MENUS : ".count($menus);
-
-exit;
-
 $sql = "SELECT * FROM menus ORDER BY id DESC";
 
 $query = $pdo->query($sql);
 
 $menus = $query->fetchAll();
-
-echo "<pre>";
-var_dump($menus);
-echo "</pre>";
-exit;
-
-echo "<pre>";
-print_r($menus);
-echo "</pre>";
 
 ?>
 
