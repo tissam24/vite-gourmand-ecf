@@ -9,6 +9,11 @@ $query = $pdo->query($sql);
 $menus = $query->fetchAll();
 
 echo "<pre>";
+var_dump($menus);
+echo "</pre>";
+exit;
+
+echo "<pre>";
 print_r($menus);
 echo "</pre>";
 
