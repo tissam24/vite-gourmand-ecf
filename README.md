@@ -46,11 +46,19 @@ git clone https://github.com/tissam24/vite-gourmand-ecf.git
 composer install
 ```
 
-## 3. Configurer la base
+## 3. Configurer la base de données
 
 Importer les fichiers SQL présents dans :
 
-/sql
+```txt
+/sql/schema.sql
+/sql/data.sql
+```
+
+Ordre recommandé :
+
+1. Importer `schema.sql`
+2. Importer `data.sql`
 
 ## 4. Configurer la connexion
 
