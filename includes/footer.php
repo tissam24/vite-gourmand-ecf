@@ -135,7 +135,7 @@ try{
 
 $query=
 $pdo->query(
-"SELECT * FROM horaires"
+"SELECT * FROM opening_hours"
 );
 
 $hours=
@@ -155,7 +155,8 @@ $hours=[];
 
 <p>
 
-<?= $hour['day_name']; ?>
+<?= $hour['day']; ?>
+
 
 :
 
